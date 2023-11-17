@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+html, body{
+   
+    width: 100%;
+    height: 100%;
+}
+#mini-circle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     z-index: 99999;
+     border-radius: 50%;
+     background-color: #000;
+}
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translate(100%);
+}
+
+#main{
+    width: 100%;
+    background-color: rgb(207, 245, 207)
+}
+
+#home{
+    width: 100%;
+    min-width: 100vh;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+}
+#nav img{
+    width: 180px;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    font-weight: 1.1vw;
+    letter-spacing: -1px;
+
+}
+#nav i{
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+#home #homemain{
+    width: 100%;
+    padding: 10vw 12vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.headings{
+    display: flex;
+    gap: 40px;
+}
+
+#homemain .headings h1{
+    color: transparent;
+    -webkit-text-stroke:1.5px  #39246a;
+    font-size: 7vw;
+    line-height: 1.5;
+    letter-spacing: -8px; 
+}
+#homemain h2{
+    color: rgb(255, 0, 102);
+}
+
+#homemain .headings h1:hover{
+    color: #000;
+}
+ 
+#homelast p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    
+}
+#homelast{
+    padding: 5vw 12vw;
+}
+
+#Trending{
+    padding: 12vw 12vw;
+}
+#Trending img{
+    width: 40px;
+}
+.fheading>h1{
+    line-height: 1;
+    font-size: 3vw;
+    font-weight: 400;
+}
+.fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+#fimages{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 5vw;
+    
+    
+}
+
+#fleft{
+    overflow: auto;
+    width: 45%;
+    height: inherit;
+    
+}
+
+.fleftelm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.fleftelm h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    margin: 1.5vw 0;
+    text-transform: capitalize;
+}
+.fleftelm h3{
+    opacity: .5;
+}
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+    
+}
+#fright .images{
+    width: 90%;
+    height: 80%;
+    
+}
+
+.btndiv{
+    margin-top: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btndiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #e6e6e6;
+    background-color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+
+}
+.btndiv button:hover {
+    background-color : black; 
+    color: white; 
+    cursor: pointer; 
+}
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+
+}
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+
+#slides{
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.slide{
+    width: 30%;
+    
+}
+.slide .img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: yellow;
+}
+.slide .tag{
+    margin: 20px 0;
+    width: fit-content;
+    padding: 10px 22px;
+    background-color: #f7f7f7;
+    border-radius: 100px;
+
+}
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide h3{
+    font-size: 1.4vw;
+    font-weight: 500;
+    letter-spacing: -.5px;
+}
